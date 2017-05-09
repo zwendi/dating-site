@@ -4,7 +4,7 @@
 img.top {vertical-align: text-top;}
 
 .table-center {
-	  margin-left: auto;
+	  margin-left: 60px;
     margin-right: auto;
 }
 
@@ -52,8 +52,69 @@ img.top {vertical-align: text-top;}
   			<input type="radio" name="gender" value="female"> Female<br> 
 			</td>
     		</tr>
+    		<tr>
+    		<td align="right"><label for="yourAge">Age:</label></td>
+    		<td><input type="number" id="yourAge" name="yourAge"></td>
+    		</tr>
+    	    <tr>
+    		<td align="right"><label for="birthday">Birthday:</label></td>
+    		<td><input type="date" id="birthday" name="birthday"></td>
+    		</tr>
+    		<tr>
+    		<td align="right"><label for="your-color">Favorite Color:</label></td>
+    		<td><input type="Color" id="your-color" name="your-color"></td>
+    		</tr>
+
+    		<tr>
+    		<td align="right"><label for="your-country">Country:</label></td>
+    		<td>
+    		<input type="text" name="your-country" id="your-country" list="country-list">
+    		<datalist id="country-list">
+  					 <option value="Afghanistan">
+  					 <option value="Canada">
+ 					 <option value="China">
+  					 <option value="USA">
+			</datalist>
+			</td>
+    		</tr>
     		</table>
 
+		</fieldset>
+
+		<fieldset >
+		
+			<legend>Your Indicator:</legend>
+			<table class="table-center" style="table-layout:fixed"  width="600">
+			<col style="width:50%" span="2" />
+ 			<tr>		    
+			<td align="right"><label for="your-height">Your Height:</label></td>
+			<td><label color="red"><font color="red">Short</font></label><input type="range" name="your-height" min="50" max="200" step="5" ><label color="red"><font color="red">High</font></label></td>
+
+			</tr>
+			<tr>
+			<td align="right"><label for="your-weight">Your Weight:</label></td>
+			<td><label color="red"><font color="red">Light</font></label><input type="range" name="your-weight" min="40" max="200" step="5" ><label color="red"><font color="red">Heavy</font></label></td>    		</tr>
+    		</table>
+		</fieldset>
+
+		<fieldset >
+		
+			<legend>Your Contact Information:</legend>
+			<table class="table-center" style="table-layout:fixed"  width="600">
+			<col style="width:50%" span="2" />
+ 			<tr>		    
+			<td align="right"><label for="your-email">Your Email:</label></td>
+			<td><input type="email" name="your-email"></td>
+			</tr>
+			<tr>		    
+			<td align="right"><label for="your-phone">Your Phone:</label></td>
+			<td><input type="number" name="your-phone"></td>
+			</tr>
+			<tr>		    
+			<td align="right"><label for="your-address">Your Address:</label></td>
+			<td><input type="text" name="your-address"></td>
+			</tr>
+			
 		</fieldset>
 	
 <!--
