@@ -2,8 +2,14 @@
 <html>
 <style>
 img.top {vertical-align: text-top;}
+
+.table-center {
+	  margin-left: auto;
+    margin-right: auto;
+}
+
 .align-center {
-    text-align: center;
+    margin-left: px auto 0;
 }
 </style>
 <body>
@@ -14,33 +20,40 @@ img.top {vertical-align: text-top;}
 		<fieldset >
 		
 			<legend>Your Face</legend>
-			<div>	
-	
-			<label for="filePicker"><span>Your image:</span></label>
-			<input type="file" id="filePicker" name="filePicker" onchange="readURL(this)">
-			
-			</div>
-			<div>	
-			<label for="preview">Image Preview<span class="algin-cneter">:</span></label>
-    		<img class="top" id="preview" src="#" alt="your image" />
-    		</div>
+			<table class="table-center" style="table-layout:fixed"  width="600">
+			<col style="width:50%" span="2" />
+ 			</td><tr>		    
+			<td align="right"><label for="filePicker">Your image:</label></td>
+			<td><input type="file" id="filePicker" name="filePicker" onchange="readURL(this)"></td>	
+			</tr>
+			<tr>
+			<td align="right"><label for="preview">Image Preview:</label></td>
+    		<td><img class="top" id="preview" src="#" alt="your image" /></td>
+    		</tr>
+    		</table>
 		</fieldset>
 
 		<fieldset>
 		
 			<legend>Your General Details:</legend>
-			<div>	
-			<label for="yourName">Name:</label>
-			<input type="text" id="yourName" name="yourName">
-			</div>
+			
 
+			<table class="table-center" style="table-layout:fixed"  width="600">
+		    <col style="width:50%" span="2" />
 
-			<div style="white-space:nowrap;">	
-			<label for="gender">Gender:</label>   
-			<input type="radio" name="gender" value="male"> Male
+ 			</td><tr>		    
+			<td align="right"><label for="yourName">Name:</label></td>
+			<td><input type="text" id="yourName" name="yourName"></td>	
+			</tr>
+			<tr>
+			<td align="right"><label for="gender">Gender:</label></td>
+    		<td>
+    		<input type="radio" name="gender" value="male"> Male
   			<input type="radio" name="gender" value="female"> Female<br> 
-		
-  			</div>
+			</td>
+    		</tr>
+    		</table>
+
 		</fieldset>
 	
 <!--
