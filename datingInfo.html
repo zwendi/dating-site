@@ -2,12 +2,48 @@
 <html>
 <style>
 img.top {vertical-align: text-top;}
+.align-center {
+    text-align: center;
+}
 </style>
 <body>
 
 <h1>Please Enter Your Details For Our Dating Website</h1>
 
 <form>
+		<fieldset >
+		
+			<legend>Your Face</legend>
+			<div>	
+	
+			<label for="filePicker"><span>Your image:</span></label>
+			<input type="file" id="filePicker" name="filePicker" onchange="readURL(this)">
+			
+			</div>
+			<div>	
+			<label for="preview">Image Preview<span class="algin-cneter">:</span></label>
+    		<img class="top" id="preview" src="#" alt="your image" />
+    		</div>
+		</fieldset>
+
+		<fieldset>
+		
+			<legend>Your General Details:</legend>
+			<div>	
+			<label for="yourName">Name:</label>
+			<input type="text" id="yourName" name="yourName">
+			</div>
+
+
+			<div style="white-space:nowrap;">	
+			<label for="gender">Gender:</label>   
+			<input type="radio" name="gender" value="male"> Male
+  			<input type="radio" name="gender" value="female"> Female<br> 
+		
+  			</div>
+		</fieldset>
+	
+<!--
 		<fieldset>
 		
 			<legend class="top">Your Face</legend>
@@ -22,10 +58,7 @@ img.top {vertical-align: text-top;}
     		</div>
 		</fieldset>
 
-
-
-
-
+-->
 
 
 </form>
